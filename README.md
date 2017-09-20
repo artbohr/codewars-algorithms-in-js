@@ -1,1 +1,1 @@
-# codewars-algorithms-in-js
+Algorithms from codewars.com coded in JavaScript.
