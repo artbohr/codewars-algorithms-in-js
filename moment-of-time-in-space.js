@@ -58,6 +58,9 @@ function momentOfTimeInSpace(moment) {
   
 }
 
+console.log(momentOfTimeInSpace("12:30 am"));
+#Outputs: [false, false, true]
+
 /* past, present and future
 I need to separate input in to an array
 in the array I need to separare everything that is not a num between(1-9)
