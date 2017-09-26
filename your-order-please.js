@@ -10,15 +10,15 @@ For an input: "is2 Thi1s T4est 3a" the function should return "Thi1s is2 3a T4es
 
 function order(words){
   // if string is empty, returns empty string
-  if (words == "") {return ""};
+  if (words === "") {return ""}
   // split the string in to an array of words
-  var a = words.split(" ");
+  const a = words.split(" ");
   // sets an array of undefined values based on length of the words array
-  var b = Array.apply(null, Array(a.length)).map(function () {return 0})
+  let b = Array.apply(null, Array(a.length)).map(() => {})
   
   // finds the number and replaces the undefined placeholder with a 'word' based on num (index)
-  for(x=0; x<a.length; x++){
-    for(i=0; i<a[x].length; i++){
+  for(let x=0; x<a.length; x++){
+    for(let i=0; i<a[x].length; i++){
       if(!Number.isNaN(parseInt(a[x][i]))){
        b.splice(a[x][i]-1, 1, a[x]);
       } 
