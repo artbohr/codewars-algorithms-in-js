@@ -14,7 +14,7 @@ function order(words){
   // split the string in to an array of words
   const a = words.split(" ");
   // sets an array of undefined values based on length of the words array
-  let b = Array.apply(null, Array(a.length)).map(() => {})
+  let b = Array.apply(null, Array(a.length)).map(() => {});
   
   // finds the number and replaces the undefined placeholder with a 'word' based on num (index)
   for(let x=0; x<a.length; x++){
