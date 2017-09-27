@@ -24,16 +24,19 @@ When Vasya finishes eating, he leaves a dirty plate/bowl behind. His life philos
 ###Examples:
 
 eatingPlan(1,1,[1,2,1])  
- //Vasya will wash a bowl only on the third day, so the answer is `1`
+
+Vasya will wash a bowl only on the third day, so the answer is `1`
 
 eatingPlan(3,1,[1, 1, 1, 1]) 
-/* Vasya will have the first type of the dish during all four days, 
-and since there are only three bowls, he will wash a bowl exactly once.*/
+
+Vasya will have the first type of the dish during all four days, 
+and since there are only three bowls, he will wash a bowl exactly once.
 
 eatingPlan(1,2,[2, 2, 2]) 
-/* Vasya will have the second type of dish for all three
+
+ Vasya will have the second type of dish for all three
  days,and as they can be eaten from either a plate or a bowl, he will never 
-need to wash a plate/bowl.*/
+need to wash a plate/bowl.
 
 */
 
