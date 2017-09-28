@@ -49,17 +49,25 @@ function momentOfTimeInSpace(moment) {
     if(!Number.isNaN(parseInt(a[x])) && parseInt(a[x]) !== 0){
       time+=parseInt(a[x]);
       
-    } else { space++ }
+    } else {
+        space++ 
+    }
 
   }
-    if (time>space) { return [false, false, true]; }
-    else if (time<space) { return [true, false, false]; }
-    else { return [false, true, false]; }
+    if (time>space) {
+      return [false, false, true]; 
+      
+    }else if (time<space) {
+      return [true, false, false]; 
+      
+    }else {
+      return [false, true, false]; 
+    }
   
 }
 
 console.log(momentOfTimeInSpace("12:30 am"));
-#Outputs: [false, false, true]
+//Outputs: [false, false, true]
 
 /* past, present and future
 I need to separate input in to an array
