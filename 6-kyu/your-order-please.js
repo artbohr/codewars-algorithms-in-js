@@ -10,7 +10,7 @@ For an input: "is2 Thi1s T4est 3a" the function should return "Thi1s is2 3a T4es
 
 function order(words){
   // if string is empty, returns empty string
-  if (words === "") {return ""}
+  if (words === "") return "";
   // split the string in to an array of words
   const a = words.split(" ");
   // sets an array of undefined values based on length of the words array
