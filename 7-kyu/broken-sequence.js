@@ -13,15 +13,15 @@ findMissingNumber("1 3 2 5") // returns 4, because 4 is missing
 */
 
 function findMissingNumber(sequence){
-  if (sequence==="") { return 0;}
+  if (sequence==="") return 0;
   
   const sequenceArray = sequence.split(" ").map((x)=> {
     return parseInt(x, 10);
   });
   
-  sequenceArray.sort((a, b)=>{return a - b});
+  sequenceArray.sort((a, b)=> {return a - b});
   
-  if (sequenceArray.includes(NaN)) { return 1;}
+  if (sequenceArray.includes(NaN)) return 1;
   
   for (let x=0;x<sequenceArray.length;x++){
     if(sequenceArray[0] !== 1){
