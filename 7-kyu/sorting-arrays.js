@@ -11,7 +11,7 @@ returns ['geko', 'octopus', 'iguana', 'eagle', 'rattlesnake']
 */
 
 function sortArray(a1, a2) {
-  var arr = [];
+  let arr = [];
 
   for (let i=0; i<a1.length; i++){
     for (let k=0; k<a2.length; k++){
@@ -24,8 +24,8 @@ function sortArray(a1, a2) {
   return arr;
 }
 
-var arr1 = ['jellyfish', 'koi', 'caribou', 'owl', 'dolphin'];
-var arr2 = ['ostrich', 'jaguar', 'deer', 'camel', 'kangaroo'];
+const arr1 = ['jellyfish', 'koi', 'caribou', 'owl', 'dolphin'];
+const arr2 = ['ostrich', 'jaguar', 'deer', 'camel', 'kangaroo'];
 
 sortArray(arr1, arr2);
 //returns ['jaguar', 'kangaroo', 'camel', 'ostrich', 'deer']
